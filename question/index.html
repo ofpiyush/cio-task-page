@@ -21,6 +21,8 @@
     t.src = 'https://assets.customer.io/assets/track-eu.js';
     s.parentNode.insertBefore(t, s);
   })();
+  var params = new URLSearchParams(window.location.search);
+  _cio.track("selected_question", Object.fromEntries(params.entries()));
 </script>
 </body>
 </html>
